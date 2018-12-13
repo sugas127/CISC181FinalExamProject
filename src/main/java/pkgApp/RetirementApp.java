@@ -1,5 +1,5 @@
 package pkgApp;
-import pkgApp.controller.RetirementController;
+import pkgApp.controller.Controller;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import javafx.scene.layout.BorderPane;
 
 public class RetirementApp extends Application {
 
-	private RetirementController controller;
+	private Controller controller;
 	
 	public static void main(String[] args) {
 		launch(args);
@@ -34,7 +34,7 @@ public class RetirementApp extends Application {
 			primaryStage.setScene(scene);
 
 			// Give the controller access to the main app.
-			RetirementController controller = loader.getController();
+			Controller controller = loader.getController();
 			controller.setMainApp(this);
 			
 			primaryStage.show();

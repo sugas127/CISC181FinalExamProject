@@ -20,9 +20,7 @@ public class RetirementTest {
 		double ExpectedPay = -554.13;
 		double ExpectedTotal = -1454485.55;
 
-
-		Retirement rtm = new Retirement(iYearsToWork, dAnnualReturnWorking, 
-				iYearsRetired, dAnnualReturnRetired, dRequiredIncome, dMonthlySSI);
+		Retirement rtm = new Retirement(iYearsToWork, dAnnualReturnWorking,iYearsRetired, dAnnualReturnRetired, dRequiredIncome, dMonthlySSI);
 		
 		double PV = rtm.TotalAmountSaved();
 		double PMT = rtm.AmountToSave();
