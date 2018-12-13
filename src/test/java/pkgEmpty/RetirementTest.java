@@ -1,13 +1,8 @@
 package pkgEmpty;
-
 import static org.junit.Assert.*;
-
 import org.junit.Test;
-
 import pkgCore.Retirement;
-
 public class RetirementTest {
-
 	@Test
 	public void TestPMT() {
 		double dAnnualReturnWorking = 0.07;
@@ -16,7 +11,6 @@ public class RetirementTest {
 		double dAnnualReturnRetired = 0.02;
 		double dRequiredIncome = 10000;
 		double dMonthlySSI = 2642;
-
 		double ExpectedPay = -554.13;
 		double ExpectedTotal = -1454485.55;
 
